@@ -67,6 +67,7 @@
   align-items: center;
   gap: 10px;
   border-radius: 30px;
+  border: 1px solid #222;
   /* background: #9a1b24; */
   color: #222;
 
@@ -561,6 +562,7 @@ line-height: normal;
 
 
 
+
 .dropdown-toggle::after {
   margin-left: 0.255em;  /* Adjust this value to control the space between text and arrow */
 }
@@ -726,7 +728,7 @@ background-color: #FFF5F6;
   border-radius: 18px;
 }
 .section-01-5 .cong{
-padding: 40px 0px;
+padding: 40px 101.5px;
 } 
 .sevenhundred-5{
   border-radius: 12px;
@@ -739,7 +741,7 @@ font-style: normal;
 font-weight: 600;
 line-height: normal;
 padding: 16px 27px;
-margin: 0px 146.5px 0px 146.5px;
+
 }
 .f5-deh1{
   margin-top: 40px;

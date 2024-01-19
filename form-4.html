@@ -37,9 +37,8 @@
                         class="form-control drop-input drop-input-4"
                         id="Brand"
                         name="Brand"
-                        onchange="updateModelOptions()"
                       >
-                        <option value="select brand">select the brand</option>
+                        <option value="">select the brand</option>
                         <option value="ducati">Ducati</option>
                         <option value="yamaha">Yamaha</option>
                         <option value="ninja">Ninja</option>
@@ -134,7 +133,10 @@
                   <div class="row">
                     <div class="col-lg-2 text-center">
                       <label for="slider-detail-col">Bike</label>
-                      <div class="col-detail model-update"></div>
+                      <div
+                        class="col-detail model-update"
+                        id="bike_model_name"
+                      ></div>
                     </div>
                     <div class="col-lg-2 text-center">
                       <label for="slider-detail-col">Asset Cost</label>
@@ -188,12 +190,12 @@
       </svg>
       <h1>Oops!</h1>
       <h3>Something went wrong from our side!</h3> -->
-    </div>
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         updateColor1();
         updateColor2();
+        updateModelOptions();
       });
 
       const loanDurationInput1 = document.getElementById("colorRange-1");
@@ -202,17 +204,20 @@
       const loanAmountValue = document.getElementById("loanAmountValue");
       const tenureDetail = document.getElementById("tenureDetail");
       const loanDetail = document.getElementById("loanDetail");
+      const assetCostInput = document.getElementById("validationCustom01");
       const assetCostDetail = document.getElementById("assetCostDetail");
       const modelUpdate = document.querySelector(".model-update");
       const brandAlert = document.getElementById("brandAlert");
+      const brand_select = document.getElementById("Brand");
+      const model_select = document.getElementById("Model");
+      const bike_model_name = document.getElementById("bike_model_name");
 
       loanDurationInput1.addEventListener("input", updateLoanDetails);
       loanAmountInput.addEventListener("input", updateLoanDetails);
+      assetCostInput.addEventListener("change", updateAssetCost);
 
       function updateLoanDetails() {
         const totalMonths = parseInt(loanDurationInput1.value);
-        const years = Math.floor(totalMonths / 12);
-        const months = totalMonths % 12;
         const durationText = `${totalMonths} months`;
 
         loanDurationValue1.textContent = durationText || "1 month";
@@ -223,17 +228,9 @@
         const loanDurationText = `${totalMonths} months`;
 
         tenureDetail.textContent = loanDurationText || "1 month";
-
         loanDetail.textContent = `₹${amount}`;
 
-        // Update Asset Cost details
-        const assetCostInput = document.getElementById("validationCustom01");
-        const assetCost = parseFloat(
-          assetCostInput.value.replace(/[^0-9.]/g, "")
-        ); // Extract numerical value
-        assetCostDetail.textContent = `₹${numberWithCommas(
-          assetCost.toFixed(0)
-        )}`;
+        updateAssetCost();
       }
 
       function updateColor1() {
@@ -250,16 +247,17 @@
         range.style.background = `linear-gradient(to right, #9B1E26 0%, #9B1E26 ${percent}%, #f0f0f0 ${percent}%, #f0f0f0 100%)`;
       }
 
+      function updateAssetCost() {
+        const assetCost = parseFloat(
+          assetCostInput.value.replace(/[^0-9.]/g, "")
+        );
+        assetCostDetail.textContent = `₹${numberWithCommas(
+          assetCost.toFixed(0)
+        )}`;
+      }
+
       function updateModelOptions() {
-        modelUpdate.innerHTML = "";
-        var brandSelect = document.getElementById("Brand");
-        var modelSelect = document.getElementById("Model");
-        var selectedModel = modelSelect.value;
-        modelUpdate.innerHTML = modelSelect.value;
-
-        console.log("258 => ", modelSelect)
-
-        var brandModels = {
+        let brandModels = {
           ducati: [
             "XDavial",
             "H2",
@@ -289,33 +287,22 @@
           // Add more models as needed
         };
 
-        var selectedBrand = brandSelect.value;
-
-        if (selectedBrand === "select brand") {
-          // Check if the previous value was the default option
-          if (brandSelect.dataset.previousValue !== "select brand") {
-            // Add error class to highlight the Brand select box
-            brandSelect.classList.add("error");
-          }
-        } else {
-          // Remove error class if Brand is selected
-          brandSelect.classList.remove("error");
-
-          // Update the model-update element with the selected model
-          modelUpdate.textContent = selectedModel;
-
-          modelSelect.innerHTML = ""; // Clear existing options
-
-          brandModels[selectedBrand].forEach(function (model) {
-            var option = document.createElement("option");
-            option.value = model;
-            option.text = model;
-            modelSelect.add(option);
+        brand_select.addEventListener("change", function () {
+          let selected_brand_value = brand_select.value;
+          let models_select_options = "";
+          brandModels[selected_brand_value].map((data) => {
+            models_select_options += `<option value="${data}">${data}</option>`;
           });
+          let selected_model_value = brandModels[selected_brand_value][0];
+          bike_model_name.textContent = selected_model_value;
+          model_select.innerHTML = models_select_options;
+        });
 
-          // Store the current value as the previous value for the next check
-          brandSelect.dataset.previousValue = selectedBrand;
-        }
+        model_select.addEventListener("change", function () {
+          bike_model_name.textContent = "";
+          let selected_model_value = model_select.value;
+          bike_model_name.textContent = selected_model_value;
+        });
       }
 
       function numberWithCommas(x) {
@@ -323,8 +310,8 @@
       }
 
       function submitFormAndNavigate() {
-        var brandSelect = document.getElementById("Brand");
-        var modelSelect = document.getElementById("Model");
+        let brandSelect = document.getElementById("Brand");
+        let modelSelect = document.getElementById("Model");
 
         if (brandSelect.value === "select brand" || modelSelect.value === "") {
           // Display an error message
@@ -344,5 +331,7 @@
         }
       }
     </script>
+
+    <script src="example.js"></script>
   </body>
 </html>
