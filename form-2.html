@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <title>form-2</title>
+  </head>
+
+  <body>
+    <div class="form2-body text-center">
+      <section class="section-01">
+        <h1 class="form2-h1">IDFC FIRST Bank Two Wheeler loan</h1>
+        <div class="cong">
+          <h2>Congratulations John Doe!</h2>
+          <p class="par1">
+            You have a pre-approved limit with
+            <br class="d-xl-none x-sm-block" />
+            IDFC FIRST Bank of
+          </p>
+          <h3 class="sevenhundred">₹5,00,000</h3>
+          <a
+            href="https://www.idfcfirstbank.com/personal-banking/loans/personal-loan?icid=pl_loanstab_knowmore"
+          >
+            <p class="par2">Need a higher loan amount</p>
+          </a>
+        </div>
+        <h3 class="conf">
+          Please confirm if you would like to proceed with the below details
+        </h3>
+        <div class="forms">
+          <form id="myForm" class="needs-validation" novalidate>
+            <div class="row">
+              <div class="col-lg-6 FIRST one">
+                <label for="validationCustom01">Name</label>
+                <input
+                  type="text"
+                  class="form-control second-form typography-2"
+                  id="validationCustom01"
+                  pattern="[A-Za-z\s]+"
+                  title="Please enter alphabets only"
+                  value="John Doe"
+                  required
+                />
+                <div class="invalid-feedback">please enter your Name</div>
+              </div>
+              <div class="col-lg-6 FIRST two">
+                <label for="validationCustom02">City</label>
+                <input
+                  type="text"
+                  class="form-control second-form typography-2"
+                  id="validationCustom02"
+                  pattern="[A-Za-z]+"
+                  title="Please enter alphabets only"
+                  value="Mumbai"
+                  required
+                />
+                <div class="invalid-feedback">please enter city name</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 second three">
+                <label for="validationCustom03">Mobile number</label>
+                <input
+                  type="text"
+                  class="form-control second-form typography-2"
+                  id="validationCustom03"
+                  pattern="[0-9]{10}"
+                  title="Please enter numbers only"
+                  value="8337238422"
+                  required
+                />
+                <div class="invalid-feedback">please enter mobile number</div>
+              </div>
+              <div class="col-lg-6 second four">
+                <label for="validationCustom04">Date of birth</label>
+                <input
+                  type="text"
+                  class="form-control second-form typography-2"
+                  id="validationCustom04"
+                  pattern="\d{2}/\d{2}/\d{4}"
+                  title="Please enter a valid date (DD/MM/YYYY)"
+                  value="12/04/1991"
+                  required
+                />
+                <div class="invalid-feedback">
+                  please enter your date of birth
+                </div>
+              </div>
+            </div>
+
+            <div class="buton d-flex justify-content-center">
+              <button class="bu-1" id="submitBtn">Submit</button>
+              <button class="bu-2" onclick="window.location.href='index.html'">
+                Cancel
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      (function () {
+        "use strict";
+        window.addEventListener("load", function () {
+          var form = document.getElementById("myForm");
+    
+          form.addEventListener(
+            "submit",
+            function (event) {
+              if (form.checkValidity() === true) {
+                // If the form is valid, redirect to form-3.html
+                window.location.href = "form-3.html";
+              }
+    
+              event.preventDefault();
+              event.stopPropagation();
+    
+              form.classList.add("was-validated");
+            },
+            false
+          );
+    
+          // Event listener for "Change details" button
+          var changeDetailsButton = document.querySelector(".bu-2");
+          if (changeDetailsButton) {
+            changeDetailsButton.addEventListener("click", function (event) {
+              event.preventDefault();  // Prevent the default form submission
+              window.location.href = "index.html";
+            });
+          }
+        });
+      })();
+    </script>
+    
+    
+  </body>
+</html>

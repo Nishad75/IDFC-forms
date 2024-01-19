@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IDFC Two Wheeler Loan</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <section class="sec-1">
+    <div class="container-fluid">
+      <div class="row px-0">
+        <div class="col-lg-6 px-0 d-flex align-items-center justify-content-center">
+          <form class="needs-validation" novalidate>
+            <div class="col-lg-12 mb-0 fill">Fill Information:</div>
+            <hr />
+            <div class="row">
+              <div class="col-lg-6 mb-3 form-1">
+                <label for="validationCustom01">Mobile number</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustom01"
+                  name="mobileNumber"
+                  placeholder="Enter mobile number"
+                  pattern="[0-9]{10}"
+                  title="Please enter numbers only"
+                  required
+                />
+                <div class="invalid-feedback">Please enter a valid mobile number.</div>
+              </div>
+              <div class="col-lg-6 mb-3 form-1">
+                <label for="validationCustom02">OTP</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustom02"
+                  name="otp"
+                  placeholder="Enter OTP"
+                  pattern="[0-9]{6}"
+                  required
+                />
+                <div class="invalid-feedback">Please enter a valid OTP.</div>
+              </div>
+            </div>
+            <button type="submit" class="bu for-1-bu">
+              <span class="typography">Verify OTP </span>
+            </button>
+          </form>
+        </div>
+        <div class="col-lg-6 px-0 color text-center">
+          <h1 class="heading">
+            IDFC FIRST Bank <br />
+            Two Wheeler loan
+          </h1>
+          <img src="assets/pics/portrate.png" alt="SCOOTY-MAN" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      "use strict";
+      window.addEventListener(
+        "load",
+        function () {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName("needs-validation");
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(
+            forms,
+            function (form) {
+              form.addEventListener(
+                "submit",
+                function (event) {
+                  if (form.checkValidity() === true) {
+                    window.location.href = "form-2.html";
+                  }
+                  event.preventDefault();
+                  event.stopPropagation();
+                  form.classList.add("was-validated");
+                },
+                false
+              );
+            }
+          );
+        },
+        false
+      );
+    })();
+  </script>
+</body>
+</html>
+
