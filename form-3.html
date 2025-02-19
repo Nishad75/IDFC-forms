@@ -22,8 +22,8 @@
     <title>form-3</title>
   </head>
   <body>
-    <div class="main-form-3">
-      <div class="section-form-3 text-center">
+    <div class="container-fluid form-3-example d-flex justify-content-center">
+      <div class="container form-3-example-2">
         <h1 class="sec-form-3-h1">IDFC FIRST Bank Two Wheeler loan</h1>
         <h3 class="form-3-h3">
           Please enter basic details to check your loan eligibility
@@ -232,60 +232,65 @@
       </div>
     </div>
     <script>
-var formthree = document.getElementById("formthree");
+      var formthree = document.getElementById("formthree");
 
-formthree.addEventListener("submit", function (event) {
-  // Prevent form submission for now
-  event.preventDefault();
-  event.stopPropagation();
+      formthree.addEventListener(
+        "submit",
+        function (event) {
+          // Prevent form submission for now
+          event.preventDefault();
+          event.stopPropagation();
 
-  // Check the selected job type and annual salary options
-  var jobTypeSelect = document.getElementById("jobType");
-  var annualSalarySelect = document.getElementById("annualSalary");
+          // Check the selected job type and annual salary options
+          var jobTypeSelect = document.getElementById("jobType");
+          var annualSalarySelect = document.getElementById("annualSalary");
 
-  var selectedJobType = jobTypeSelect.value;
-  var selectedSalary = annualSalarySelect.value;
+          var selectedJobType = jobTypeSelect.value;
+          var selectedSalary = annualSalarySelect.value;
 
-  // Remove the "error" class from select boxes
-  removeErrorClass(jobTypeSelect);
-  removeErrorClass(annualSalarySelect);
+          // Remove the "error" class from select boxes
+          removeErrorClass(jobTypeSelect);
+          removeErrorClass(annualSalarySelect);
 
-  // Display an error message and add the "error" class to select boxes with default options
-  displayError(jobTypeSelect, selectedJobType === "jobtypeselect");
-  displayError(annualSalarySelect, selectedSalary === "select");
+          // Display an error message and add the "error" class to select boxes with default options
+          displayError(jobTypeSelect, selectedJobType === "jobtypeselect");
+          displayError(annualSalarySelect, selectedSalary === "select");
 
-  // Validate the form only if there are no default values selected
-  if (selectedJobType !== "jobtypeselect" && selectedSalary !== "select") {
-    // Check the selected options are not the default "select" options
-    if (formthree.checkValidity() === true) {
-      // Check the selected annual salary option
-      if (selectedSalary === "10k-25k") {
-        window.location.href = "form-6.html";
-      } else {
-        // For other salary options, redirect to form-4.html
-        window.location.href = "form-4.html";
+          // Validate the form only if there are no default values selected
+          if (
+            selectedJobType !== "jobtypeselect" &&
+            selectedSalary !== "select"
+          ) {
+            // Check the selected options are not the default "select" options
+            if (formthree.checkValidity() === true) {
+              // Check the selected annual salary option
+              if (selectedSalary === "10k-25k") {
+                window.location.href = "form-6.html";
+              } else {
+                // For other salary options, redirect to form-4.html
+                window.location.href = "form-4example.html";
+              }
+            }
+          }
+
+          formthree.classList.add("was-validated");
+        },
+        false
+      );
+
+      function displayError(selectElement, isError) {
+        // Display an error message and add the "error" class to the select box with default option
+        if (isError) {
+          selectElement.setCustomValidity("Please make a selection.");
+          selectElement.classList.add("is-invalid");
+        }
       }
-    }
-  }
 
-  formthree.classList.add("was-validated");
-}, false);
-
-function displayError(selectElement, isError) {
-  // Display an error message and add the "error" class to the select box with default option
-  if (isError) {
-    selectElement.setCustomValidity("Please make a selection.");
-    selectElement.classList.add("is-invalid");
-  }
-}
-
-function removeErrorClass(selectElement) {
-  // Remove the "error" class and reset the custom validity
-  selectElement.classList.remove("is-invalid");
-  selectElement.setCustomValidity("");
-}
-
-
+      function removeErrorClass(selectElement) {
+        // Remove the "error" class and reset the custom validity
+        selectElement.classList.remove("is-invalid");
+        selectElement.setCustomValidity("");
+      }
     </script>
   </body>
 </html>

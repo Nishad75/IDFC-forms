@@ -1,11 +1,11 @@
 .color {
-  background: linear-gradien
-  (104deg, #fceceb 4.61%, #f5c3c4 91.58%);
+  background: linear-gradien (104deg, #fceceb 4.61%, #f5c3c4 91.58%);
   font-family: "Inter", sans-serif;
   margin: 0 0 0 0;
 }
 .sec-1 {
   font-family: "Inter", sans-serif;
+  padding: 0px;
 }
 .col-lg-6 {
   padding-right: 0px;
@@ -160,7 +160,7 @@ flex-shrink: 0; */
 }
 .conf {
   padding-top: 40px;
-  border-bottom:1px solid #D8D8D8;;
+  border-bottom: 1px solid #d8d8d8;
   padding-bottom: 20px;
   color: #222;
   font-family: Inter;
@@ -180,7 +180,7 @@ flex-shrink: 0; */
   font-weight: 500;
   line-height: normal;
 }
-.FIRST label{
+.FIRST label {
   margin-top: 32px;
 }
 .FIRST input {
@@ -278,13 +278,13 @@ flex-shrink: 0; */
 .error {
   border: 1px solid red; /* You can customize the styling here */
 }
-.alert-message{
+.alert-page {
   text-align: -webkit-center;
-  width: 465px;
-height: 259px;
-flex-shrink: 0;
+  padding: 244px;
 }
-
+.index-img {
+  background: linear-gradient(104deg, #fceceb 4.61%, #f5c3c4 91.58%);
+}
 
 .form-1 {
   color: #222;
@@ -305,6 +305,7 @@ flex-shrink: 0;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  padding: 20px;
 }
 .typography {
   color: #fff;
@@ -314,274 +315,270 @@ flex-shrink: 0;
   font-weight: 600;
   line-height: normal;
 }
-.main-form-3{
+.main-form-3 {
   padding: 56px 210.5px;
-  background-color:  #FFF5F6;
+  background-color: #fff5f6;
   font-family: inter;
 }
-.section-form-3{
-  background-color: #FFF;
+.section-form-3 {
+  background-color: #fff;
   border-radius: 20px;
   padding: 48px 96.5px;
 }
-.form-3-h3{
+.form-3-h3 {
   border-bottom: 1px solid;
   padding-bottom: 32px;
   margin-bottom: 0px;
   color: #222;
-text-align: center;
-font-family: Inter;
-font-size: 18px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
-.form-3-h3-2{
+.form-3-h3-2 {
   border-bottom: 1px solid;
   margin-top: 64px;
   padding-bottom: 20px;
   font-family: Inter;
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-background: var(--Gradient-1, linear-gradient(135deg, #D60B26 0.29%, #871117 99.1%));
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
- 
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: var(
+    --Gradient-1,
+    linear-gradient(135deg, #d60b26 0.29%, #871117 99.1%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.sec-form-3-h1{
+.sec-form-3-h1 {
   margin-bottom: 16px;
   color: #222;
-text-align: center;
-font-family: Inter;
-font-size: 32px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  text-align: center;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
-.FIRST-3 label{
-margin-top: 32px;
-color: #222;
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-margin-bottom: 8px;
+.FIRST-3 label {
+  margin-top: 32px;
+  color: #222;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 8px;
 }
-.second-3 label{
+.second-3 label {
   margin-top: 24px;
   color: #222;
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-margin-bottom: 8px;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 8px;
 }
-.FIRST-2-3 label{
+.FIRST-2-3 label {
   margin-top: 24px;
   color: #222;
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-margin-bottom: 8px;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 8px;
 }
-.drop-3 label{
+.drop-3 label {
   margin-top: 18px;
   color: #222;
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-margin-bottom: 8px;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 8px;
 }
-.second-3-3 label{
+.second-3-3 label {
   margin-top: 24px;
   color: #222;
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-margin-bottom: 8px;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 8px;
 }
-.bu-1-3{
+.bu-1-3 {
   margin-top: 70px;
   padding: 16px 36px;
   border-radius: 30px;
-background: #9A1B24;
-color: #FFF;
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  background: #9a1b24;
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
-.second-form-3{
+.second-form-3 {
   padding: 21px 20px;
 }
-.FIRST-3 input{
-padding: 21px 20px;
-color: #222;
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-border-radius: 6px;
-border: 1px solid #D8D8D8;
-background: #EFEFEF;
-}
-.second-3 input{
+.FIRST-3 input {
   padding: 21px 20px;
   color: #222;
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-border-radius: 6px;
-border: 1px solid #D8D8D8;
-background: #EFEFEF;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 6px;
+  border: 1px solid #d8d8d8;
+  background: #efefef;
 }
-.FIRST-2-3 input{
+.second-3 input {
   padding: 21px 20px;
   color: #222;
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-border-radius: 6px;
-border: 1px solid #D8D8D8;
-background: #EFEFEF;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 6px;
+  border: 1px solid #d8d8d8;
+  background: #efefef;
 }
-.second-3-3 input{
+.FIRST-2-3 input {
   padding: 21px 20px;
   color: #222;
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 6px;
+  border: 1px solid #d8d8d8;
+  background: #efefef;
 }
-#jobType{
+.second-3-3 input {
+  padding: 21px 20px;
+  color: #222;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+#jobType {
   padding: 20px 20px;
   color: #222;
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
-#annualSalary{
+#annualSalary {
   padding: 20px 20px;
   color: #222;
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
-.form-4-slider{border-radius: 6px;
-border: 1px solid #D8D8D8;
-background: #FFF;
+.form-4-slider {
+  border-radius: 6px;
+  border: 1px solid #d8d8d8;
+  background: #fff;
 }
-.slider-details{
+.slider-details {
   border-radius: 20px;
-background: linear-gradient(94deg, #FCECEB 2.54%, #F5C3C4 57.09%);
-margin-top: 24px;
-padding-top: 32px;
-padding-bottom: 32px;
+  background: linear-gradient(94deg, #fceceb 2.54%, #f5c3c4 57.09%);
+  margin-top: 24px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 27px;
+  padding-right: 27px;
 }
-.sec-form-4-h1{
+.sec-form-4-h1 {
   margin-bottom: 16px;
   color: #222;
-text-align: center;
-font-family: Inter;
-font-size: 32px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  text-align: center;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
-.form-4-h3{
-border-bottom: 1px solid;
-padding-bottom: 48px;
-margin: 0px;
-color: #222;
-text-align: center;
-font-family: Inter;
-font-size: 18px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+.form-4-h3 {
+  border-bottom: 1px solid;
+  padding-bottom: 48px;
+  margin: 0px;
+  color: #222;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
-.drop-4 label{
+.drop-4 label {
   margin-top: 32px;
   margin-bottom: 8px;
   color: #222;
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
-.form-4-slider{
+.form-4-slider {
   padding: 24px;
 }
-.for-3-empdet{
+.for-3-empdet {
   color: #222;
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
-.drop-input{
+.drop-input {
   padding: 20px 20px;
 }
-#Brand{
+#Brand {
   padding: 21px 20px;
 }
-#Model{
+#Model {
   padding: 21px 20px;
 }
 
-.range-mar input{
+.range-mar input {
   margin: 0px;
 }
-.form-6-bu{
+.form-6-bu {
   text-decoration: none;
 }
-
-
-
 
 .dropdown-toggle::after {
-  margin-left: 0.255em;  /* Adjust this value to control the space between text and arrow */
+  margin-left: 0.255em; /* Adjust this value to control the space between text and arrow */
 }
-.card-text-decor{
+.card-text-decor {
   text-decoration: none;
 }
-
-
-
-
-
-
 
 input[type="range"] {
   -webkit-appearance: none;
   width: 100%;
   height: 10px;
   border-radius: 5px;
-  background: linear-gradient(to right, #9B1E26 0%, #9B1E26 0%);
+  background: linear-gradient(to right, #9b1e26 0%, #9b1e26 0%);
   outline: none;
   opacity: 0.7;
   transition: opacity 0.2s;
@@ -597,7 +594,7 @@ input[type="range"]::-webkit-slider-thumb {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #9B1E26;
+  background: #9b1e26;
   cursor: pointer;
   z-index: 2;
   position: relative;
@@ -607,157 +604,141 @@ input[type="range"]::-moz-range-thumb {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #9B1E26;
+  background: #9b1e26;
   cursor: pointer;
   z-index: 2;
   position: relative;
 }
 
-
-
-.for-4-bu{
+.for-4-bu {
   border: 1px solid;
 }
 
-.for-3-bu{
+.for-3-bu {
   border: 1px solid;
 }
-.for-1-bu{
+.for-1-bu {
   border: 1px solid;
 }
-.con-6{
+.con-6 {
   border-radius: 20px;
-background: linear-gradient(94deg, #FCECEB 2.54%, #F5C3C4 57.09%);
-padding:64px 0px 64px 0px ;
+  background: linear-gradient(94deg, #fceceb 2.54%, #f5c3c4 57.09%);
+  padding: 64px 0px 64px 0px;
 }
-.con-6 p{
+.con-6 p {
   color: #222;
-text-align: center;
-font-family: Inter;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin-bottom: 40px;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 40px;
 }
 
-.big-6{
-  background-color: #FFF5F6;
-  background: #FFF5F6;
+.big-6 {
+  background-color: #fff5f6;
+  background: #fff5f6;
   padding: 170px 210px;
   height: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-.slider label{
+.slider label {
   margin-top: 24px;
   margin-bottom: 8px;
   color: #222;
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
-.twins .twinz{
+.twins .twinz {
   margin-top: 24px 24px 19px 24px;
 }
-.form-6-body{
-  background-color: #FFF5F6;
+.form-6-body {
+  background-color: #fff5f6;
   padding: 107px 210.5px;
 }
-.section-01-6{
+.section-01-6 {
   border-radius: 20px;
-background: linear-gradient(94deg, #FCECEB 2.54%, #F5C3C4 57.09%);
-padding: 43.5px 0px;
+  background: linear-gradient(94deg, #fceceb 2.54%, #f5c3c4 57.09%);
+  padding: 43.5px 0px;
 }
-.form-body-6{
+.form-body-6 {
   padding: 107px 210.5px;
-  background-color:  #FFF5F6;
+  background-color: #fff5f6;
 }
-.Apologies p{
+.Apologies p {
   color: #222;
-text-align: center;
-font-family: Inter;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin-bottom: 40px;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 40px;
 }
-.sevenhundred-6{
-  color: #9B1E26;
-text-align: center;
-font-family: Inter;
-font-size: 18px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-margin-bottom: 64px;
+.sevenhundred-6 {
+  color: #9b1e26;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 64px;
 }
 
-.but-1-6{
-  color: #FFF;
-text-align: center;
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-margin: 0px;
-padding: 16px 36px;
+.but-1-6 {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0px;
+  padding: 16px 36px;
 }
-.form5-body{
-padding: 56px 210.5px;
-background-color: #FFF5F6;
+.form5-body {
+  padding: 56px 210.5px;
+  background-color: #fff5f6;
 }
-.container-f5{
+.container-f5 {
   padding: 48px 97px;
-  background-color: #FFF;
+  background-color: #fff;
   border-radius: 18px;
 }
-.section-01-5 .cong{
-padding: 40px 101.5px;
-} 
-.sevenhundred-5{
-  border-radius: 12px;
-border: 1.5px dashed #9B1E26;
-color: #000;
-text-align: center;
-font-family: Inter;
-font-size: 20px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-padding: 16px 27px;
-
+.section-01-5 .cong {
+  padding: 40px 101.5px;
 }
-.f5-deh1{
+.sevenhundred-5 {
+  border-radius: 12px;
+  border: 1.5px dashed #9b1e26;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 16px 27px;
+}
+.f5-deh1 {
   margin-top: 40px;
   margin-bottom: 26px;
   color: #222;
-font-family: Inter;
-font-size: 28px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
-.card-body-5{
+.card-body-5 {
   padding: 20px 20px;
-  
 }
-.card-title{
+.card-title {
   color: #222;
   font-family: Inter;
   font-size: 18px;
@@ -765,127 +746,364 @@ line-height: normal;
   font-weight: 600;
   line-height: normal;
 }
-.card-text{
+.card-text {
   color: #848484;
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
-.map-5{
+.map-5 {
   padding: 0px;
 }
 
-.f5-bu{
+.f5-bu {
   margin-top: 24px;
   padding: 16px 32px;
-  color: #FFF;
-text-align: center;
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-border: 1px solid;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: 1px solid;
 }
-.f5-bu-1{
+.f5-bu-1 {
   padding: 16px 36px;
   margin: 0px;
-  margin-top:  32px; ;
+  margin-top: 32px;
 }
-.f5-c2{
+.f5-c2 {
   margin-top: 12px;
 }
-.f5-p{
+.f5-p {
   color: #222;
-text-align: center;
-font-family: Inter;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin-bottom: 20px;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.fill {
+  border-bottom: 1px solid #d8d8d8;
+  padding-bottom: 12px;
+}
+.form-1 label {
+  margin-top: 24px;
+}
+
+.form-3-example {
+  background-color: #fff5f6;
+}
+.form-3-example-2 {
+  background-color: #fff;
+}
+.container-fluid.form-3-example {
+  padding: 56px 210px;
+}
+
+.container.form-3-example-2 {
+  padding: 48px 97px;
+  border-radius: 15px;
+  margin: 0px;
+}
+.container-fluid.apologies-big {
+  background-color: #fff5f6;
+  padding: 169px 210.5px;
+}
+.apologies-small {
+  border-radius: 20px;
+  background: linear-gradient(94deg, #fceceb 2.54%, #f5c3c4 57.09%);
+  padding: 64px 94.5px;
+  margin: 0px;
+}
+.apologies-small p {
+  margin-bottom: 40px;
+  color: #222;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.col-6 label {
+  color: #595959;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+.col-detail {
+  color: #222;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.twinz {
+  color: #898686;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.cong-form-5 {
+  padding: 40px 101.5px;
+}
+.alert-2{
+  color: #000;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.alert-1{
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 @media only screen and (max-width: 767px) {
- .form2-body{
-  padding: 0px;
- }
- .section-01{
-  padding: 40px 15px ;
- }
-  .form2-h1{
+  .form2-body {
+    padding: 0px;
+  }
+  .section-01 {
+    padding: 40px 15px;
+  }
+  .form2-h1 {
+    color: #222;
+    text-align: center;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0px 77.5px 24px 77.5px;
+  }
+  .cong {
+    margin-bottom: 40px;
+    padding: 32px 0px;
+  }
+  .cong h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .par1 {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+  .sevenhundred {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .par2 {
+    font-size: 12px;
+  }
+  .conf {
+    padding: 0px 0px 12px 0px;
+    font-size: 16px;
+  }
+  .FIRST label {
+    margin-top: 26px;
+    font-size: 14px;
+  }
+  .FIRST input {
+    font-size: 14px;
+    padding: 16px 19px;
+  }
+  .second label {
+    font-size: 14px;
+  }
+  .second input {
+    font-size: 14px;
+    padding: 16px 19px;
+  }
+  .FIRST {
+    padding: 0px;
+  }
+  .second {
+    padding: 0px;
+  }
+  .two label {
+    margin-top: 12px;
+  }
+  .three label {
+    margin-top: 12px;
+  }
+  .four label {
+    margin-top: 12px;
+  }
+  .buton {
+    margin-top: 40px;
+  }
+  .bu-1 {
+    padding: 16px 45px;
+  }
+  .bu-2 {
+    padding: 16px 25px;
+  }
+  .sec-1 {
+    padding: 0px;
+  }
+  .for-1-bu {
+    margin-left: 100px;
+    margin-top: 40px;
+  }
+  .fill {
+    margin-top: 36px;
+  }
+  .hr {
+    margin-top: 12px;
+    margin-bottom: 24px;
+  }
+  .form-1 {
+    padding: 0px;
+  }
+  .form-1-label-2 label {
+    margin-top: 12px;
+  }
+  .FIRST {
+    margin-bottom: 0px;
+  }
+  .bu-1 {
+    padding: 16px 57px;
+    margin-right: 10px;
+  }
+  .bu-2 {
+    padding: 16px 57px;
+  }
+  .container-fluid.form-3-example {
+    padding: 0px;
+  }
+  .container.form-3-example-2 {
+    padding: 40px 15px;
+  }
+  .container-fluid.apologies-big {
+    padding: 40px 15px 0px 15px;
+    background: #fff;
+  }
+  .container.apologies-small {
+    padding: 32px 13.5px;
+    color: #222;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .apologies-small p {
+    color: #222;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .sevenhundred-6 {
+    color: #9b1e26;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .but-1-6 {
+    padding: 16px 36px;
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .col-6 label {
+    color: #595959;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 32px;
+  }
+  .col-detail {
+    color: #222;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .slider-details {
+    padding-top: 0px;
+  }
+  .form-4-mobile label {
+    color: #222;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .bu-1-3 {
+    margin-top: 0px;
+  }
+  .cong-form-5 {
+    padding: 32px 15px;
+  }
+  .f5-bu-1 {
+    padding: 16px 36px;
+  }
+  .f5-bu {
+    padding: 16px 36px;
+    margin-left: 29.5px;
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .f5-p{
     color: #222;
 text-align: center;
 font-family: Inter;
-font-size: 22px;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
+  .sevenhundred-5{
+    color: #000;
+text-align: center;
+font-family: Inter;
+font-size: 14px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
-margin: 0px 77.5px 24px 77.5px;
- }
- .cong{
-  margin-bottom: 40px;
-  padding:32px 0px ;
- }
- .cong h2{
-font-size: 18px;
-margin-bottom: 8px;
- }
- .par1{
-  font-size: 14px;
-  margin-bottom: 25px;
- }
- .sevenhundred{
-  font-size: 20px;
-  margin-bottom: 12px;
- }
- .par2{
-  font-size: 12px;
- }
- .conf{
-  padding: 0px 0px 12px 0px;
-  font-size: 16px;
- }
-.FIRST label{
-  margin-top: 26px;
-  font-size: 14px;
-}
-.FIRST input{
-  font-size: 14px;
-  padding: 16px 19px;
-}
-.second label{
-  font-size: 14px;
-}
-.second input{
-  font-size: 14px;
-  padding: 16px 19px;
-}
-.FIRST{
-  padding: 0px;
-}
-.second{
-  padding: 0px;
-}
-.two label{
-  margin-top: 12px;
-}
-.three label{
-  margin-top: 12px;
-}
-.four label{
-  margin-top: 12px;
-}
-.buton{
-  margin-top: 40px;
-}
-.bu-1{
-  padding: 16px 45px;
-}
-.bu-2{
-  padding: 16px 25px;
-}
-
+margin-bottom: 0px;
+padding: 16px 15px;
+  }
 }

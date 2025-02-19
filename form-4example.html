@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+          rel="stylesheet"
+        />
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <title>select the vehicle</title>
+      </head>
+<body>
+    <div class="container-fluid form-3-example d-flex justify-content-center">
+        <div class="container form-3-example-2">
+            <h1 class="sec-form-4-h1">IDFC FIRST Bank Two Wheeler loan</h1>
+            <h3 class="form-4-h3">
+              Please select the vehicle which you would like to drive home
+            </h3>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="forms">
+                  <form
+                    class="needs-validation"
+                    novalidate
+                    onsubmit="submitFormAndNavigate(); return false;"
+                  >
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="form-group drop-4 form-4-mobile">
+                          <label for="Brand">Brand</label>
+                          <select
+                            class="form-control drop-input drop-input-4"
+                            id="Brand"
+                            name="Brand"
+                          >
+                            <option value="">select the brand</option>
+                            <option value="ducati">Ducati</option>
+                            <option value="yamaha">Yamaha</option>
+                            <option value="ninja">Ninja</option>
+                            <option value="honda">Honda</option>
+                            <option value="hero">Hero</option>
+                            <!-- Add more options as needed -->
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="form-group drop-4 form-4-mobile">
+                          <label for="Model">Model</label>
+                          <select
+                            class="form-control drop-input drop-input-4"
+                            id="Model"
+                            name="Model"
+                          >
+                            <option value="" selected>Select a Model</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-6 second-3-3 three form-4-mobile">
+                        <label for="validationCustom01">Asset cost </label>
+                        <input
+                          type="text"
+                          class="form-control second-form typography-2"
+                          id="validationCustom01"
+                          pattern="[0-9]{1,}"
+                          value="₹"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="slider form-4-mobile">
+                      <label for="colorRange-1">Tenure</label>
+                      <div class="row form-4-slider mx-0">
+                        <div class="col-lg-12 d-flex justify-content-between twins">
+                          <div class="twinz">6 Months</div>
+                          <div class="twinz">10 Years</div>
+                        </div>
+                        <div class="container">
+                          <div class="slider-container">
+                            <input
+                              id="colorRange-1"
+                              oninput="updateColor1(); updateLoanDetails();"
+                              type="range"
+                              class="form-control-range col-lg-12"
+                              min="1"
+                              max="120"
+                              step="1"
+                              value="6"
+                            />
+                            <span
+                              class="loan-duration-value"
+                              id="loanDurationValue-1"
+                              >6 Months</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slider form-4-mobile">
+                      <label for="colorRange-2">Loan Amount</label>
+                      <div class="row form-4-slider mx-0">
+                        <div class="col-lg-12 d-flex justify-content-between">
+                          <div class="twinz">₹7k</div>
+                          <div class="twinz">₹14 L</div>
+                        </div>
+                        <div class="container">
+                          <div class="slider-container">
+                            <input
+                              id="colorRange-2"
+                              oninput="updateColor2(); updateLoanDetails();"
+                              type="range"
+                              class="form-control-range col-lg-12"
+                              min="7000"
+                              max="1400000"
+                              step="7000"
+                              value="7000"
+                            />
+                            <span class="loan-amount-value" id="loanAmountValue"
+                              >7000</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-12"></div>
+                    <div class="slider-details">
+                      <div class="row">
+                        <div class="col-lg-2 col-6 text-center">
+                          <label for="slider-detail-col">Bike</label>
+                          <div
+                            class="col-detail model-update"
+                            id="bike_model_name"
+                          ></div>
+                        </div>
+                        <div class="col-lg-2 col-6 text-center">
+                          <label for="slider-detail-col">Asset Cost</label>
+                          <div class="col-detail" id="assetCostDetail"></div>
+                        </div>
+    
+                        <div class="col-lg-2 col-6 text-center">
+                          <label for="slider-detail-col">Tenure</label>
+                          <div class="col-detail" id="tenureDetail">6 Months</div>
+                        </div>
+                        <div class="col-lg-2 col-6 text-center">
+                          <label for="slider-detail-col">Loan</label>
+                          <div class="col-detail" id="loanDetail">₹7k</div>
+                        </div>
+                        <div class="col-lg-2 col-6 text-center">
+                          <label for="slider-detail-col">EMI</label>
+                          <div class="col-detail">₹20k/mon</div>
+                        </div>
+                        <div class="col-lg-2 col-6 text-center">
+                          <label for="slider-detail-col">Down Payment</label>
+                          <div class="col-detail">₹2Lakhs</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="buton d-flex justify-content-center">
+                      <!-- Change the form ID to match your actual form ID -->
+                      <button
+                        class="bu-1-3 for-4-bu"
+                        onclick="submitFormAndNavigate()"
+                      >
+                        Submit details
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          updateColor1();
+          updateColor2();
+          updateModelOptions();
+        });
+  
+        const loanDurationInput1 = document.getElementById("colorRange-1");
+        const loanAmountInput = document.getElementById("colorRange-2");
+        const loanDurationValue1 = document.getElementById("loanDurationValue-1");
+        const loanAmountValue = document.getElementById("loanAmountValue");
+        const tenureDetail = document.getElementById("tenureDetail");
+        const loanDetail = document.getElementById("loanDetail");
+        const assetCostInput = document.getElementById("validationCustom01");
+        const assetCostDetail = document.getElementById("assetCostDetail");
+        const modelUpdate = document.querySelector(".model-update");
+        const brandAlert = document.getElementById("brandAlert");
+        const brand_select = document.getElementById("Brand");
+        const model_select = document.getElementById("Model");
+        const bike_model_name = document.getElementById("bike_model_name");
+  
+        loanDurationInput1.addEventListener("input", updateLoanDetails);
+        loanAmountInput.addEventListener("input", updateLoanDetails);
+        assetCostInput.addEventListener("change", updateAssetCost);
+  
+        function updateLoanDetails() {
+          const totalMonths = parseInt(loanDurationInput1.value);
+          const durationText = `${totalMonths} months`;
+  
+          loanDurationValue1.textContent = durationText || "1 month";
+  
+          const amount = numberWithCommas(loanAmountInput.value);
+          loanAmountValue.textContent = amount;
+  
+          const loanDurationText = `${totalMonths} months`;
+  
+          tenureDetail.textContent = loanDurationText || "1 month";
+          loanDetail.textContent = `₹${amount}`;
+  
+          updateAssetCost();
+        }
+  
+        function updateColor1() {
+          const range = document.getElementById("colorRange-1");
+          const percent =
+            ((range.value - range.min) / (range.max - range.min)) * 100;
+          range.style.background = `linear-gradient(to right, #9B1E26 0%, #9B1E26 ${percent}%, #f0f0f0 ${percent}%, #f0f0f0 100%)`;
+        }
+  
+        function updateColor2() {
+          const range = document.getElementById("colorRange-2");
+          const percent =
+            ((range.value - range.min) / (range.max - range.min)) * 100;
+          range.style.background = `linear-gradient(to right, #9B1E26 0%, #9B1E26 ${percent}%, #f0f0f0 ${percent}%, #f0f0f0 100%)`;
+        }
+  
+        function updateAssetCost() {
+          const assetCost = parseFloat(
+            assetCostInput.value.replace(/[^0-9.]/g, "")
+          );
+          assetCostDetail.textContent = `₹${numberWithCommas(
+            assetCost.toFixed(0)
+          )}`;
+        }
+  
+        function updateModelOptions() {
+          let brandModels = {
+            ducati: [
+              "XDavial",
+              "H2",
+              "ducati panigale",
+              "Ducati Scramble 800",
+              "Ducati Monster",
+            ],
+            yamaha: ["R15", "R15M", "R3", "FZX"],
+            ninja: [
+              "kawaasaki ninja h2",
+              "kawasaki ninja h2r",
+              "kawasaki ninja 300",
+            ],
+            honda: [
+              "honda sp",
+              "honda shine",
+              "honda unicorn",
+              "honda hness CB350",
+            ],
+            hero: [
+              "Splendor",
+              "splendor plus",
+              "hero hf delux",
+              "hero Xpulse",
+              "hero xtreme",
+            ],
+            // Add more models as needed
+          };
+  
+          brand_select.addEventListener("change", function () {
+            let selected_brand_value = brand_select.value;
+            let models_select_options = "";
+            brandModels[selected_brand_value].map((data) => {
+              models_select_options += `<option value="${data}">${data}</option>`;
+            });
+            let selected_model_value = brandModels[selected_brand_value][0];
+            bike_model_name.textContent = selected_model_value;
+            model_select.innerHTML = models_select_options;
+          });
+  
+          model_select.addEventListener("change", function () {
+            bike_model_name.textContent = "";
+            let selected_model_value = model_select.value;
+            bike_model_name.textContent = selected_model_value;
+          });
+        }
+  
+        function numberWithCommas(x) {
+          return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+  
+        function submitFormAndNavigate() {
+          let brandSelect = document.getElementById("Brand");
+          let modelSelect = document.getElementById("Model");
+  
+          if (brandSelect.value === "select brand" || modelSelect.value === "") {
+            // Display an error message
+            alert("Please select a valid Brand and Model before submitting.");
+            // Add error class to highlight the Brand select box
+            brandSelect.classList.add("error");
+          } else {
+            // Remove the error class if it was added
+            brandSelect.classList.remove("error");
+  
+            try {
+              // Check if the selected brand is "honda"
+              if (brandSelect.value.toLowerCase() === "honda") {
+                // Redirect to "alert.html" for Honda brand
+                window.location.href = "alert.html";
+              } else {
+                // Redirect to "form-5.html" for other brands
+                window.location.href = "form-5example.html";
+              }
+            } catch (error) {
+              console.error("Error submitting form and navigating:", error);
+            }
+          }
+        }
+      </script>
+  
+      <script src="example.js"></script>
+</body>
+</html>
